@@ -7,6 +7,14 @@ fn square_of_sum(n: i32) -> i64 {
     sum * sum
 }
 
-pub fn run() -> i64 {
-    square_of_sum(100) - sum_of_squares(100)
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test() {
+        assert_eq!(sum_of_squares(10), 385);
+        assert_eq!(square_of_sum(10), 3025);
+        assert_eq!(square_of_sum(10) - sum_of_squares(10), 2640);
+    }
 }

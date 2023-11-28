@@ -42,11 +42,12 @@ fn find_largest_palindrome(digits: u32) -> Result<u32, u32> {
     }
 }
 
-pub fn run() {
-    let digits = 3;
+#[cfg(test)]
+mod tests {
+    use super::*;
 
-    println!(
-        "{}",
-        find_largest_palindrome(digits).expect("No palindrome found.")
-    );
+    #[test]
+    fn test() {
+        assert_eq!(find_largest_palindrome(2).unwrap(), 9009);
+    }
 }

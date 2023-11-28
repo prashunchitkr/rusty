@@ -17,6 +17,12 @@ fn smallest_possible_evenly_divisible(max: u64) -> u64 {
     n
 }
 
-pub fn run() -> u64 {
-    smallest_possible_evenly_divisible(20)
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test() {
+        assert_eq!(smallest_possible_evenly_divisible(10), 2520);
+    }
 }

@@ -7,6 +7,12 @@ fn get_divisible_sum(nums_if_divisible: Vec<i32>, max: i32) -> i32 {
         .sum()
 }
 
-pub fn run() -> i32 {
-    get_divisible_sum(Vec::from([3, 5]), 1_000)
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test() {
+        assert_eq!(get_divisible_sum(vec![3, 5], 10), 23);
+    }
 }

@@ -15,6 +15,12 @@ fn even_fib_sum(max: i64) -> i128 {
     fibonacci(max).iter().filter(|&x| x % 2 == 0).sum()
 }
 
-pub fn run() -> i128 {
-    even_fib_sum(4_000_000)
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test() {
+        assert_eq!(even_fib_sum(10), 10);
+    }
 }

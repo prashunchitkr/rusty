@@ -24,6 +24,12 @@ fn largest_prime_factor(n: i128) -> i128 {
         .clone()
 }
 
-pub fn run() -> i128 {
-    largest_prime_factor(600851475143)
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn test() {
+        assert_eq!(largest_prime_factor(131_95), 29);
+    }
 }

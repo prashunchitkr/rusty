@@ -1,6 +1,6 @@
-pub mod p1;
-pub mod p2;
-pub mod p3;
-pub mod p4;
-pub mod p5;
-pub mod p6;
+mod p1;
+mod p2;
+mod p3;
+mod p4;
+mod p5;
+mod p6;
