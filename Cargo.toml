@@ -1,2 +1,2 @@
 [workspace]
-members = ["euler", "leetcode", "adventofcode"]
+members = ["euler", "leetcode", "adventofcode", "nes_emu"]
